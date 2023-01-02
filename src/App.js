@@ -10,7 +10,18 @@ function App() {
             <h1 className="f2 white pTitle">RoboFriends</h1>
             <SearchBox />
           </div>
-          <Cardlist />
+
+          <div style=
+            {
+              { 
+                overflow: 'scroll', 
+                border: '5px solid transparent', 
+                marginTop: '25px', 
+                height: '800px'
+              }
+            }>
+            <Cardlist />
+          </div>
       </RobotProvider>
     </>
   );
